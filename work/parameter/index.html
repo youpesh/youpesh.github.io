@@ -907,17 +907,23 @@ Throughout the design process, I concentrated on crafting an intuitive user inte
   <script data-framer-appear-animation="reduce">
    (()=>{function c(i,o,m){if(window.__framer_disable_appear_effects_optimization__||typeof animator>"u")return;let e={detail:{bg:document.hidden}};requestAnimationFrame(()=>{let a="framer-appear-start";performance.mark(a,e),animator.animateAppearEffects(JSON.parse(window.__framer__appearAnimationsContent.text),(s,p,d)=>{let t=document.querySelector(s);if(t)for(let[r,f]of Object.entries(p))animator.startOptimizedAppearAnimation(t,r,f,d[r])},i,o,m&&window.matchMedia("(prefers-reduced-motion:reduce)").matches===!0,animator.getActiveVariantHash(JSON.parse(window.__framer__breakpoints.text)));let n="framer-appear-end";performance.mark(n,e),performance.measure("framer-appear",{start:a,end:n,detail:e.detail})})}return c})()("data-framer-appear-id","__Appear_Animation_Transform__",true)
   </script>
-  <link fetchpriority="low" href="https://framerusercontent.com/sites/1JnigONHnJzjKjbR51Ftj8/react.Cca1AwHv.mjs" rel="modulepreload"/>
-  <link fetchpriority="low" href="https://framerusercontent.com/sites/1JnigONHnJzjKjbR51Ftj8/rolldown-runtime.DTUNiY_x.mjs" rel="modulepreload"/>
-  <link fetchpriority="low" href="https://framerusercontent.com/sites/1JnigONHnJzjKjbR51Ftj8/framer.DYAVdVye.mjs" rel="modulepreload"/>
-  <link fetchpriority="low" href="https://framerusercontent.com/sites/1JnigONHnJzjKjbR51Ftj8/motion.DJ8JQ3sl.mjs" rel="modulepreload"/>
-  <link fetchpriority="low" href="https://framerusercontent.com/sites/1JnigONHnJzjKjbR51Ftj8/qcZ_8iTB0FID2kE2XF3O72khwjBq7pXEPur9RBZb7-g.ZjJFn05_.mjs" rel="modulepreload"/>
-  <link fetchpriority="low" href="https://framerusercontent.com/sites/1JnigONHnJzjKjbR51Ftj8/shared-lib.D2OMkCkT.mjs" rel="modulepreload"/>
-  <link fetchpriority="low" href="https://framerusercontent.com/sites/1JnigONHnJzjKjbR51Ftj8/Nfl5RoykK.Cnn24cTL.mjs" rel="modulepreload"/>
-  <link fetchpriority="low" href="https://framerusercontent.com/sites/1JnigONHnJzjKjbR51Ftj8/QYqlxbTGV.DCe_rZh8.mjs" rel="modulepreload"/>
-  <link fetchpriority="low" href="https://framerusercontent.com/sites/1JnigONHnJzjKjbR51Ftj8/ZH27qaTKc.BqzO9IpL.mjs" rel="modulepreload"/>
-  <link fetchpriority="low" href="https://framerusercontent.com/sites/1JnigONHnJzjKjbR51Ftj8/script_main.O3nX8HQr.mjs" rel="modulepreload"/>
-  <script async="" data-framer-bundle="main" fetchpriority="low" src="https://framerusercontent.com/sites/1JnigONHnJzjKjbR51Ftj8/script_main.O3nX8HQr.mjs" type="module">
+  <!--
+    NOTE:
+    When opening this page via file:// (local preview), Framer's hosted runtime bundle will re-hydrate
+    and overwrite the static HTML with the remote content. We only load the bundle when hosted
+    over http/https so local edits are visible immediately.
+  -->
+  <script>
+   (() => {
+     if (location.protocol === "file:") return;
+     const script = document.createElement("script");
+     script.type = "module";
+     script.async = true;
+     script.setAttribute("data-framer-bundle", "main");
+     script.setAttribute("fetchpriority", "low");
+     script.src = "https://framerusercontent.com/sites/1JnigONHnJzjKjbR51Ftj8/script_main.O3nX8HQr.mjs";
+     document.body.appendChild(script);
+   })();
   </script>
   <div aria-hidden="true" id="svg-templates" style="position: absolute; overflow: hidden; bottom: 0; left: 0; width: 0; height: 0; z-index: 0; contain: strict">
    <svg id="svg11571803066" viewbox="0 0 16 16">
